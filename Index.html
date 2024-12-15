@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Videografen Website</title>
+  <!-- AOS für Animationen -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="#projects">Projekte</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Über mich Abschnitt -->
+  <section id="about" data-aos="fade-up">
+    <h1>Willkommen auf meiner Videografen-Website</h1>
+    <p>Ich bin ein professioneller Videograf und biete Ihnen hochwertige Video- und Fotodienste für Ihre Projekte an.</p>
+  </section>
+
+  <!-- Projekte Abschnitt -->
+  <section id="projects">
+    <h2 data-aos="fade-up">Meine Projekte</h2>
+    
+    <div class="project" data-aos="fade-right">
+      <h3>Projekt 1: Eventvideografie</h3>
+      <p>Beschreibung des Projekts.</p>
+      <img src="project1.jpg" alt="Projekt 1">
+      <video width="320" height="240" controls>
+        <source src="video1.mp4" type="video/mp4">
+        Ihr Browser unterstützt das Videoformat nicht.
+      </video>
+    </div>
+
+    <div class="project" data-aos="fade-left">
+      <h3>Projekt 2: Werbevideo für Unternehmen</h3>
+      <p>Beschreibung des Projekts.</p>
+      <img src="project2.jpg" alt="Projekt 2">
+      <video width="320" height="240" controls>
+        <source src="video2.mp4" type="video/mp4">
+        Ihr Browser unterstützt das Videoformat nicht.
+      </video>
+    </div>
+  </section>
+
+  <!-- Kontakt Abschnitt -->
+  <section id="contact">
+    <h2 data-aos="fade-up">Kontaktieren Sie mich</h2>
+    <form action="https://formspree.io/f/xovqoqzl" method="POST" data-aos="fade-up">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Nachricht:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Absenden</button>
+    </form>
+  </section>
+
+  <!-- AOS und jQuery für Animationen -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();  // Initialisiert die AOS-Bibliothek
+  </script>
+</body>
+</html>
